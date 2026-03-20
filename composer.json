@@ -1,7 +1,6 @@
 {
   "name": "cleantalk/templates",
   "description": "CleanTalk APBCT traits",
-  "type": "cleantalk-apbct-lib",
   "authors": [
     {
       "name": "CleanTalk Team",
@@ -9,12 +8,9 @@
     }
   ],
   "license": "GPL-3.0-or-later",
-  "require": {
-    "cleantalk/apbct-installer": "*"
-  },
-  "config": {
-    "allow-plugins": {
-      "cleantalk/apbct-installer": true
+  "autoload": {
+    "psr-4": {
+      "Cleantalk\\Common\\Templates\\": "/"
     }
   }
 }
